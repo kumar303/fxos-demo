@@ -9,14 +9,14 @@ However, it is just a regular HTML5 website so you can also run it
 any web browser.
 Clone the repository to get the code on your machine::
 
-    git clone git://github.com/kumar303/firefoxos-demo.git
+    git clone git://github.com/kumar303/fxos-demo.git
 
 For convenience, there is a simple Python script included that will
 start a web server on your machine.
 Python is probably available on your machine already. Type this to start
 up the server::
 
-    cd firefoxos-demo
+    cd fxos-demo
     python run_server.py
 
 Open up the site in a web browser:
