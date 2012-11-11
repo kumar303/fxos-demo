@@ -1,74 +1,89 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Firefoxos-demo : firefox OS demo" />
+    <meta charset="utf-8">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <title>Mozfest Tweets</title>
+    <meta name="description" content="">
 
-    <title>Firefoxos-demo</title>
+    <!-- Mobile viewport optimized: h5bp.com/viewport -->
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+    <!-- If using Twitter Bootstrap, uncomment these lines
+         (also see javascript at the bottom of this file) -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <!-- <link rel="stylesheet" href="css/bootstrap-responsive.css"> -->
+
+    <!-- x-tags: https://github.com/csuwldcat/x-tag -->
+    <!-- <script src="js/lib/x-tag.js></script> -->
+
+    <!-- For x-tags, you need to include each component's style and js
+         here, for example for the accordion: -->
+    <!-- <link rel="stylesheet" href="css/lib/x-tag/accordion.css"> -->
+    <!-- <script src="js/lib/x-tag/accordion.js></script> -->
+
+    <!-- If you intend to use volo's build command, do not add any
+         other CSS here and @import it in app.css. It will be inlined
+         when building. -->
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+    <!-- All JavaScript at the bottom, except this Modernizr build.
+         Modernizr enables HTML5 elements & feature detects for optimal performance.
+         Create your own custom Modernizr build: www.modernizr.com/download/ -->
+    <script src="js/lib/modernizr-2.5.3.min.js"></script>
   </head>
-
   <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/kumar303/firefoxos-demo">View on GitHub</a>
+    <!-- Add your site or application content here -->
 
-          <h1 id="project_title">Firefoxos-demo</h1>
-          <h2 id="project_tagline">firefox OS demo</h2>
+<div id="result"></div>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/kumar303/firefoxos-demo/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/kumar303/firefoxos-demo/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
+    <!-- JavaScript at the bottom for fast page loading: http://developer.yahoo.com/performance/rules.html#js_bottom -->
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+    <!-- Using require.js, a module system for javascript, include the
+         js files. This loads "main.js", which in turn can load other
+         files, all handled by require.js:
+         http://requirejs.org/docs/api.html#jsfiles -->
+    <!--
+    <script type="text/javascript"
+            data-main="js/app.js"
+            src="js/lib/require.js"></script>
+    -->
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+    <!-- If you don't want to use require.js, just delete the above
+         tag (and this) and uncomment the following script blocks. -->
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back
+         to local if offline. -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/lib/jquery.js"><\/script>')</script>
 
-<h3>Designer Templates</h3>
+    <!-- Include the in-app payments API
+         https://developer.mozilla.org/en/Apps/In-app_payments -->
+    <!--
+    <script src="https://marketplace-cdn.addons.mozilla.net/mozmarket.js"></script>
+    -->
+    <script src="js/app.js"></script>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+    <!-- If using Twitter Bootstrap and not require.js, include the js.
+         If you are using require.js, see js/lib/app.js -->
+    <!-- <script src="/js/lib/bootstrap.min.js"></script> -->
 
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Firefoxos-demo maintained by <a href="https://github.com/kumar303">kumar303</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
+    <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+         mathiasbynens.be/notes/async-analytics-snippet -->
+    <!--
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+    -->
+    <script src="js/app/js"></script>
   </body>
 </html>
