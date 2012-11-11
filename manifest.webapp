@@ -7,6 +7,6 @@
     "48": "/img/icon-48.png",
     "128": "/img/icon-128.png"
   },
-  "launch_path": "/index.html",
+  "launch_path": "/firefoxos-demo/",
   "installs_allowed_from": ["*"]
 }
