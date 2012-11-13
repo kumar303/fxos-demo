@@ -27,7 +27,39 @@
     <!-- If you intend to use volo's build command, do not add any
          other CSS here and @import it in app.css. It will be inlined
          when building. -->
-    <link rel="stylesheet" href="css/app.css">
+    <!--
+    <link rel="stylesheet" href="style/app.css">
+    -->
+    <link rel="stylesheet" href="style/bb/switches/style.css">
+    <link rel="stylesheet" href="style/bb/lists/style.css">
+    <link rel="stylesheet" href="style/bb/progress_activity/style.css">
+
+    <link rel="stylesheet" href="style/bb/fonts.css">
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        font-size: 10px;
+        background-color: #fff;
+      }
+      h2.bb-docs {
+        font-size: 1.8rem;
+        font-family: "Open Sans", Sans-serif;
+        font-weight: lighter;
+        color: #666;
+        margin: -1px 0 0;
+        background-color: #f5f5f5;
+        padding: 0.4rem 0.4rem 0.4rem 3rem;
+        border: solid 1px #e8e8e8;
+      }
+      body[role="application"] li dl dt {
+        font-size: 1.2rem;
+        white-space: normal;
+        overflow: visible;
+        text-overflow: clip;
+        height: auto;
+      }
+    </style>
 
     <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
@@ -36,12 +68,19 @@
          Create your own custom Modernizr build: www.modernizr.com/download/ -->
     <script src="js/lib/modernizr-2.5.3.min.js"></script>
   </head>
-  <body>
+  <body role="application">
 
     <!-- Add your site or application content here -->
 
-<div id="result"></div>
-
+    <section role="region">
+      <h2 class="bb-docs">Tweets</h2>
+      <p role="status" id="load-progress">
+        <progress class="small"></progress>
+         <span>Loading tweets...</span>
+      </p>
+      <ul id="result">
+      </ul>
+    </section>
 
     <!-- JavaScript at the bottom for fast page loading: http://developer.yahoo.com/performance/rules.html#js_bottom -->
 
@@ -84,6 +123,5 @@
       s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
     -->
-    <script src="js/app/js"></script>
   </body>
 </html>
