@@ -30,5 +30,6 @@ if __name__ == '__main__':
                   default=9100)
     (options, args) = op.parse_args()
     httpd = SocketServer.TCPServer((options.host, options.port), Handler)
-    puts("serving at http://%s:%s/" % (options.host, options.port))
+    puts("Manifest URL: http://%s:%s/manifest.webapp" % (options.host, options.port))
+    puts("Serving app at http://%s:%s/" % (options.host, options.port))
     httpd.serve_forever()
